@@ -1,8 +1,12 @@
 <template>
-  <div class="home">
-    <img src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <v-container class="home" fluid fill-height>
+    <v-layout justify-center align-center>
+      <v-flex shrink>
+        <img src="../assets/logo.png">
+        <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script lang="ts">

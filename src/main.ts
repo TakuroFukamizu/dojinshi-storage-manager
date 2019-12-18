@@ -4,6 +4,13 @@ import router from './router';
 import store from './store';
 import './registerServiceWorker';
 
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
+Vue.use(Vuetify);
+
+import VueQrcode from '@xkeshi/vue-qrcode';
+Vue.component(VueQrcode.name, VueQrcode);
+
 Vue.config.productionTip = false;
 
 new Vue({
